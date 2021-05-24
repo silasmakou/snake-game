@@ -11,7 +11,7 @@
 </p>
 
 
-![principal](https://user-images.githubusercontent.com/79108882/117722023-f3f4c100-b1b6-11eb-81db-f22a910ce2a7.jpg)
+![Snake Game](https://user-images.githubusercontent.com/79108882/119290412-d85fd080-bc22-11eb-8a4c-1b60a0a4c045.jpg)
 
 
 
