@@ -7,6 +7,10 @@ snake[0] = {
     y: 8 * box
 }
 let direction = "right";
+let food = {
+    x: Math.floor(Math.random() * 15 + 1) * box,
+    y: Math.floor(Math.random() * 15 + 1) * box // Math gerar numeros aleatorios retirando a parte flutuante e colocamos o tamnho do canvas
+}
 
 function criarBG() {
     context.fillStyle = "lightgreen";
@@ -18,6 +22,11 @@ function criarSnake() {
         context.fillStyle = "green";
         context.fillRect(snake[i].x, snake[i].y, box, box); //tamanho da snake
     }
+}
+
+function drawFood(){
+    context.fillStyle = "red";
+    context.fillRect(food.x, food.y, box, box);
 }
 
 document.addEventListener('keydown', update);
@@ -39,6 +48,7 @@ function iniciarJogo() {
     
     criarBG();
     criarSnake();
+    drawFood();
 
     let snakeX = snake[0].x;
     let snakeY = snake[0].y;
